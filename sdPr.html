@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Linguagens de Programação</title>
+</head>
+<body>
+    <header>
+        <h1>Projetos Arduino</h1>
+        <div class="right">
+            <a href="index.html">Página Inicial</a>
+            <a href="ssTk.html">Semáforo Simples/Tinkercad</a>
+            <a href="ssPr.html">Semáforo Simples/Prática</a>
+            <a href="sdTk.html">Semáforo Duplo/Tinkercad</a>
+            <a href="sdPr.html">Semáforo Duplo/Prática</a>
+            <a href="cont90.html">Contador Decrescente   9-0</a>
+            <a href="cont09.html">Contador Crescente   0-9</a>
+            <a href="contDuplo.html">Contador Crescente/Semáforo</a>
+        </div>
+    </header>
+        <main>
+            <h1>Prática e Código na IDE Arduíno</h1>
+            <div class="imagens">
+                <img src="./assets//FotoDuplo.jpg" alt="">
+                <img src="./assets//telaCPPcodigoDupla.png" alt="">
+            </div><br>
+            <h1>Vídeo Semáforo Duplo</h1>
+            <video controls src="../assets/videoSDP.mp4"></video>
+            <pre>
+                <p>
+                    void setup()
+                    {
+                      pinMode(13, OUTPUT);
+                      pinMode(8, OUTPUT);
+                      pinMode(9, OUTPUT);
+                      pinMode(11, OUTPUT);
+                      pinMode(10, OUTPUT);
+                      pinMode(12, OUTPUT);
+                    }
+                                
+                    void loop()
+                    {
+                      digitalWrite(13, HIGH);
+                      digitalWrite(8, HIGH);
+                      delay(7000); 
+                      digitalWrite(8, LOW);
+                      digitalWrite(9, HIGH);
+                      delay(2000);
+                      digitalWrite(9, LOW);
+                      digitalWrite(13, LOW);
+                      digitalWrite(11, HIGH);
+                      digitalWrite(10, HIGH);
+                      delay(7000); 
+                      digitalWrite(11, LOW);
+                      digitalWrite(12, HIGH);
+                      delay(2000); 
+                      digitalWrite(12, LOW);
+                      digitalWrite(10, LOW);
+                      delay(1);
+                    }                
+                </p>
+            </pre>
+        </main>
+    </body>
+</html>
